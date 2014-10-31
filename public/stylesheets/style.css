@@ -1,0 +1,30 @@
+@import "responsiveStyle.css";
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.ta-editor {
+    min-height: 10px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    margin:20px 0;
+}
+
+.article_group {
+    margin-bottom: 100px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.article {
+    padding: 40px;
+}
+

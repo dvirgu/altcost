@@ -1,0 +1,53 @@
+<div ng-controller="HomePageCtrl">
+    <div class="section group">
+        <div class="col span_1_of_7">
+            Logo
+        </div>
+        <div class="col span_1_of_7">
+            Search
+        </div>
+        <div class="col span_1_of_7">
+            Stories
+        </div>
+        <div class="col span_1_of_7">
+            Info
+        </div>
+        <div class="col span_1_of_7">
+            Videos
+        </div>
+        <div class="col span_1_of_7">
+            Login
+        </div>
+        <div class="col span_1_of_7">
+            Social networks icons
+        </div>
+    </div>
+    <!--   <div>
+
+        Search <input type="text" ng-model="searchText.title">
+           <table>
+               <tr ng-repeat="article in articles | filter:searchText">
+                   <td></td>
+                   <td>{{ article.thumbnails }}</td>
+               </tr>
+           </table>
+       </div>-->
+    <div class="article_group">
+        <div class="section group">
+            <div class="col span_1_of_2 article">
+                {{articles[0].title}}
+            </div>
+            <div class="col span_1_of_2 article">
+                {{articles[1].title}}
+            </div>
+        </div>
+        <div class="section group">
+            <div class="col span_1_of_2 article">
+                {{articles[2].title}}
+            </div>
+            <div class="col span_1_of_2 article">
+                {{articles[3].title}}
+            </div>
+        </div>
+    </div>
+</div>

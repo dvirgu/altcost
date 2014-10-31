@@ -1,0 +1,18 @@
+extends index
+
+block content
+    link(href='stylesheets/signin.css', rel='stylesheet').
+
+    div(ng-controller='VisitorCtrl')
+        | Welcome to AltCost, you're our # {{visitorCounter}} visitor.
+        p
+        div(ng-view, class='container')
+            from(name="loginForm", class='form-signin', ng-controller="LoginCtrl")
+              div
+                  input(type='email', name='username', class='from-control', placeholder="Email address"
+                  ng-model='username', required, autofocus).
+              div
+                  input(type='password', name='password', class='from-control', placeholder='Password'
+                  ng-model='password', required).
+
+              button(type='submit', class='btn btn-lg btn-primary btn-block', ng-click='login()') Login

@@ -1,0 +1,42 @@
+<div ng-controller="HomePageCtrl">
+    <h2>Hello <a link href ng-click="doLogout()">{{user.name}}</a>, Welcome to AltCost</h2>
+    <p>
+        TOOL BAR BUTTONS
+    </p>
+</div>
+
+<div ng-controller="EditorCtrl">
+
+    <div>
+        <div ng-repeat="article in articles">
+            <a link href ng-click="editArticle(article)"> {{article.title}} </a>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <input type="text"
+                   name="articleTitle"
+                   placeholder="Title"
+                   ng-model="currentArticle.title"
+                   required>
+        </div>
+
+        <div>
+            <text-angular ta-toolbar="[['bold','italics'],['insertImage', 'insertLink', 'insertVideo']]"
+                          name="articleContent"
+                          placeholder="Content"
+                          ng-model="currentArticle.content">
+            </text-angular>
+        </div>
+        <div>
+            <input name="articleKeywords" placeholder="Keywords" ng-model="currentArticle.keywords" ng-list>
+        </div>
+
+        <div>
+            <button name="saveArticleButton" ng-click="saveArticle()">Save Article</button>
+            <button name="newArticleButton" ng-click="newArticle()">New Article</button>
+        </div>
+    </div>
+
+</div>
